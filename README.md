@@ -110,11 +110,6 @@ Food-Spoilage-Detection/
 
 The complete project proposal is available here.
 
- **Project Proposal**
-
-➡️ [IoT_Food_Spoilage_Detection_System_Bangla.pdf](Documentation/IoT_Food_Spoilage_Detection_System_Bangla.pdf)
-
----
 
 
 ## Author
