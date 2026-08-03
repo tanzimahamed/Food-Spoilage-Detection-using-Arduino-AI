@@ -124,7 +124,7 @@ AI • Machine Learning • IoT Enthusiast
 
 🔗 GitHub: https://github.com/tanzimahamed
 
-🔗 LinkedIn: https://linkedin.com/in/tanzim-ahamed
+🔗 LinkedIn: https://linkedin.com/in/tanzim-ahamed-
 
 ---
 
