@@ -21,8 +21,7 @@ An Intelligent IoT & AI-powered system for real-time food quality monitoring and
 ## Overview
 
 Food spoilage causes significant economic loss and health risks worldwide.
-
-This project proposes an intelligent monitoring system that combines IoT sensors with Machine Learning to detect food spoilage before it becomes unsafe. The system continuously monitors environmental conditions, analyzes sensor data, predicts food quality, and sends real-time alerts to users. :contentReference[oaicite:1]{index=1}
+This project proposes an intelligent monitoring system that combines IoT sensors with Machine Learning to detect food spoilage before it becomes unsafe. The system continuously monitors environmental conditions, analyzes sensor data, predicts food quality, and sends real-time alerts to users.
 
 ---
 
@@ -44,21 +43,23 @@ This project proposes an intelligent monitoring system that combines IoT sensors
 ## System Architecture
 
 ```
-
 Sensors
 │
 ├── MQ Gas Sensor
-├── DHT22
+├── DHT11
 ├── pH Sensor
 │
 ▼
-ESP32 / Arduino
+ESP32
 │
 ▼
-ThingSpeak / Firebase / Blynk
+PHP API (insert.php / get_data.php)
 │
 ▼
-Machine Learning Model
+MySQL Database
+│
+▼
+Web Dashboard + AI Model (Random Forest)
 │
 ▼
 Prediction
@@ -67,20 +68,16 @@ Prediction
 Fresh 🟢
 Warning 🟡
 Spoiled 🔴
-
 ```
 
 ---
 
 ## Machine Learning
 
-Algorithms
+**Algorithm**
+- Random Forest Classifier (Scikit-learn)
 
-- Decision Tree
-- Random Forest
-
-Output Classes
-
+**Output Classes**
 - Fresh
 - Warning
 - Spoiled
@@ -90,40 +87,63 @@ Output Classes
 ## Repository Structure
 
 ```
-
-Food-Spoilage-Detection/
+Food-Spoilage-Detection-using-Arduino-AI/
 │
-├── Arduino_Code/
-├── AI_Model/
-├── Dataset/
 ├── Documentation/
-│ └── IoT_Food_Spoilage_Detection_System_Bangla.pdf
-├── Images/
-├── README.md
-└── LICENSE
-
+│   └── (project report & proposal PDFs)
+│
+├── food-spoilage/
+│   └── food-spoilage/
+│       ├── ai/
+│       │   ├── train_model.py
+│       │   ├── predict.py
+│       │   └── requirements.txt
+│       ├── api/
+│       │   ├── insert.php
+│       │   └── get_data.php
+│       ├── assets/
+│       │   ├── css/style.css
+│       │   └── js/script.js
+│       ├── config/
+│       │   └── database.php
+│       ├── dashboard/
+│       │   ├── index.php
+│       │   └── charts.php
+│       ├── esp32/
+│       │   └── food_spoilage_esp32/
+│       │       └── food_spoilage_esp32.ino
+│       ├── sql/
+│       │   └── schema.sql
+│       └── README.md
+│
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 ## Project Documentation
 
-The complete project proposal is available here.
+The complete project report and proposal are available in the [`Documentation/`](./Documentation) folder.
 
+---
 
+## 📂 Project Output
+
+Photos, videos, and other output files from the working prototype are available in this Google Drive folder:
+
+🔗 **[View Project Output](https://drive.google.com/drive/folders/1jlOjuAvabEr9TWdR7yY2bnmZBXtW04KP?usp=sharing)**
+
+---
 
 ## Author
 
 **Tanzim Ahamed**
-
 Information & Communication Engineering (ICE)
-
 AI • Machine Learning • IoT Enthusiast
 
 📧 tanzim.ahamed.bd@gmail.com
-
 🔗 GitHub: https://github.com/tanzimahamed
-
 🔗 LinkedIn: https://linkedin.com/in/tanzim-ahamed-
 
 ---
