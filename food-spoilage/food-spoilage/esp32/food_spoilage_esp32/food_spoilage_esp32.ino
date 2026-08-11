@@ -64,7 +64,7 @@
 // =================================================
 
 const char* ssid     = "DIU ICE";
-const char* password = "Toh@4321";
+const char* password = "*****";
 
 
 // =================================================
@@ -72,7 +72,7 @@ const char* password = "Toh@4321";
 // =================================================
 
 const char* serverUrl =
-  "http://192.168.0.100/food-spoilage/api/insert.php";
+  "http://IP/food-spoilage/api/insert.php";
 
 
 // =================================================
